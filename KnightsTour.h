@@ -3,7 +3,13 @@
 
 using namespace std;
 
-struct knight_moves;
+typedef struct knight_moves {
+	int x;
+	int y;
+}knight_moves;
+
+const knight_moves MOVES[8] = { { 2,1 },{ 1,2 },{ -1,2 },{ -2,1 },
+{ -2,-1 },{ -1,-2 },{ 1,-2 },{ 2,-1 } };
 
 void print_solution(int **board);
 
